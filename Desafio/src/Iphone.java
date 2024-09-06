@@ -3,24 +3,6 @@ import java.util.List;
 
 public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet{
 
-     //atributos
-     private List<String> playlist;
-     private int volumeAtual;
-     private String numeroAtual;
-     private boolean emChamada;
-     private String paginaAtual;
-     private List<String> historico;
-
-     // construtor com inicializacao dos atributos
-     public Iphone() {
-          this.playlist = new ArrayList<>();
-          this.volumeAtual = 50;
-          this.numeroAtual = "";
-          this.emChamada = false;
-          this.paginaAtual = "";
-          this.historico = new ArrayList<>();
-     }
-
      // Métodos da interface ReprodutorMusical sobreEscrito
      @Override
      public void tocar() {
